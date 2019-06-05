@@ -4,8 +4,40 @@
   "description": "Live streaming app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "start": "./node_modules/.bin/supervisor -w server ./server/index.js"
   },
   "author": "Sinisa Mikulic",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "css-loader": "^2.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "file-loader": "^4.0.0",
+    "history": "^4.9.0",
+    "jquery": "^3.4.1",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-media-server": "^2.1.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "session-file-store": "^1.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.0.0",
+    "video.js": "^7.5.4",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2"
+  }
 }
